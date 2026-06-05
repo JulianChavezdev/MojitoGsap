@@ -11,15 +11,15 @@ const Navbar = () => {
             scrollTrigger: {
                 trigger: 'nav',
                 start: 'bottom top',
-                scrub: true,
+                scrub: 0.8,
             }
         });
 
 
         navTween.fromTo('nav',
             {backgroundColor: 'transparent'}, {
-                backgroundColor: '#00000005',
-                backgroundFilter: 'blur(10px)',
+                backgroundColor: '#00000030',
+                backdropFilter: 'blur(10px)',
                 duration: 1,
                 ease: 'power1.inOut'
             });
@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <nav>
         <div>
-            <a href="#" className="flex-items-center gap-2">
+            <a href="/home" className="flex-items-center gap-2">
                 <img src='public/images/logo.png' alt='logo'/>
                 <p>velvet Pour</p>
             </a>
